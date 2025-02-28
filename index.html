@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Davaleba N19</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <button onclick="this.remove()">Click me to delete</button>
+    <!-- ///////////////////////////////// -->
+    <h1>Import Image Example</h1>
+
+    <button onclick="importImage()">Import Image</button>
+
+    <div id="image-container"></div>
+
+    <section id="characters-container"></section>
+
+    <script src="index.js">
+      function importImage() {
+        const img = document.createElement("img");
+
+        img.src =
+          "https://fastly.picsum.photos/id/180/2000/1600.jpg?hmac=dr3QTXUHbgPDvKgE9s2UjynoVFsZdxoLI3cxK8YZd9A";
+
+        img.alt = "Placeholder Image";
+
+        img.style.width = "300px";
+
+        const container = document.getElementById("image-container");
+
+        container.appendChild(img);
+      }
+    </script>
+  </body>
 </html>

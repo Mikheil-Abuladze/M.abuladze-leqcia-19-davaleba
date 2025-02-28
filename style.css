@@ -1,0 +1,17 @@
+.character {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+.character img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.character h3 {
+  margin: 10px 0 5px;
+}
